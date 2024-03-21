@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Queensides";
+    src: url(./Fonts/Queensides-3z7Ey.ttf);
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: rgb(14, 42, 201);
+    transition: 0.4s;
+}
+
+body{
+    background-color: rgb(23, 86, 122, 0.705);
+    color: white;
+    font-family: "Queensides";
+    margin: auto;
+    padding: 15px;
+    max-width: 1200px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo{
+    flex-direction: column;
+    line-height: 20px;
+    padding: 15px;
+}
+
+li{
+    display: inline-flex;
+    margin: 10px;
+    font-size: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 15px;
+}
+
+form [type="submit"]{
+    height: 40px;
+    width: 50%;
+    background-color: rgb(46, 64, 163);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
