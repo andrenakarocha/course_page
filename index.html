@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="CSS/styles.css" rel="stylesheet"/>
     <title>O Básico Bem Feito</title>
 </head>
@@ -14,10 +16,10 @@
         </div>
 
         <ul>
-            <a href="index.html"><li>Início</li></a>
-            <a href="contas.html"><li>Calculadora</li></a>
-            <a href="dieta.html"><li>Dieta</li></a>
-            <a href="login.html" id="botao_login"><li>Login</li></a>
+            <a href="index.html" class="menu"><li>Início</li></a>
+            <a href="contas.html" class="menu"><li>Calculadora</li></a>
+            <a href="dieta.html" class="menu"><li>Dieta</li></a>
+            <a href="login.html" class="menu"><li>Login</li></a>
         </ul>
     </header>
 
@@ -26,12 +28,25 @@
             <span><h2>Junte-se a Nós</h2></span>
             <h2>O Básico BEM FEITO</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quidem commodi eius soluta maxime, asperiores illo officia doloribus voluptatum minus neque cumque quia optio labore, a, aut voluptate ipsam! Odio!</p>
+            <p id="descricao">Em um mundo repleto de opções complicadas, às vezes tudo que precisamos é retornar ao básico. No "O Básico Bem Feito", buscamos simplificar o caminho para um estilo de vida saudável e equilibrado. Nossa abordagem foca na excelência dos fundamentos, desde nutrição até atividade física, proporcionando uma base sólida para o seu bem-estar. Junte-se a nós e descubra como os pequenos passos podem levar a grandes transformações.</p>
         </aside>
 
-        <article>
-            <img src="Imgs/gym.png" alt="photo"/>
-        </article>
+    <img src="Imgs/workout.svg" alt="imagem"/>
+
     </main>
+
+    <footer id="fixarfooter">
+        <div id="social">
+            <a href="#" class="icone"><i class="icon ion-social-instagram"></i></a>
+            <a href="#" class="icone"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul id="lista-footer">
+            <a href="#" class="item"><li>Serviços</li></a>
+            <a href="#" class="item"><li>Sobre</li></a>
+            <a href="#" class="item"><li>Termos</li></a>
+            <a href="#" class="item"><li>Contato</li></a>
+            <p class="copyright">Marco Naccarato © </p>
+        </ul>
+    </footer>
 </body>
 </html>
