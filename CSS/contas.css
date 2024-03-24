@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "Queensides";
-    src: url(./Fonts/Queensides-3z7Ey.ttf);
+    font-family: "Cocogoose";
+    src: url(/Fonts/Cocogoose.ttf);
 }
 
 a {
@@ -13,17 +13,19 @@ a {
 }
 
 a:hover{
-    color: rgb(14, 42, 201);
+    color: rgba(39, 166, 240, 0.705);
     transition: 0.4s;
+    list-style: none;
+    text-decoration: none;
 }
 
 body{
     background-color: rgb(23, 86, 122, 0.705);
     color: white;
-    font-family: "Queensides";
-    margin: auto;
-    padding: 15px;
-    max-width: 1200px;
+    font-family: "Cocogoose";
+    margin: 0;
+    max-width: auto;
+    max-height: auto;
 }
 
 header{
@@ -33,44 +35,111 @@ header{
     align-items: center;
 }
 
-#titulo{
+h1{
     flex-direction: column;
-    line-height: 20px;
-    padding: 15px;
+    line-height: 5px;
+    padding-top: 40px;
+    padding-left: 30px;
+    font-size: 40px;
 }
 
-li{
+.menu{
     display: inline-flex;
     margin: 10px;
     font-size: 20px;
+    padding-top: 40px;
+    list-style: none;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    font-family: "Cocogoose";
 }
 
 form{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    padding: 15px;
+	padding-top: 75px;
+    width: 600px;
+	font-size: 16px;
 }
 
-form [type="submit"]{
-    height: 40px;
-    width: 50%;
-    background-color: rgb(46, 64, 163);
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    border: solid;
-}
-
-form [type="submit"]:hover{
-    cursor: pointer;
+form label {
+	display:block;
+	margin-bottom: 10px;
 }
 
 input{
-    margin-top: 20px;
-    height: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 40px;
     padding: 5px;
     border-radius: 20px;
-    border: none;
+    border: solid #405cf5 3px;
     font-size: 15px;
+}
+
+.botao {
+  background-color: #405cf5;
+  border-radius: 8px;
+  border: solid;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Cocogoose";
+  font-size: 100%;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+}
+
+.botao:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+#fixarfooter {
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+#lista-footer {
+    text-align: center;
+    background-color: rgb(48, 71, 199);
+}
+
+.item {
+    padding: 15px;
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+}
+
+#social {
+    text-align: center;
+    padding-bottom: auto;
+    padding-top: auto;
+    background-color: rgb(48, 71, 199);
+    font-size: 50px;
+}
+
+.icone {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 3px solid rgba(39, 166, 240, 0.705);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: rgb(48, 71, 199);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
