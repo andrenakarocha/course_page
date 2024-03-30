@@ -5,18 +5,19 @@
 
 @font-face {
     font-family: "Cocogoose";
-    src: url(/Fonts/Cocogoose.ttf);
+    src: url(../fonts/Cocogoose.ttf);
 }
 
 a {
     color: white;
+    list-style: none;
+    user-select: none;
+    text-decoration: none;
 }
 
 a:hover{
     color: rgba(39, 166, 240, 0.705);
     transition: 0.4s;
-    list-style: none;
-    text-decoration: none;
 }
 
 body{
@@ -35,12 +36,9 @@ header{
     align-items: center;
 }
 
-h1{
-    flex-direction: column;
-    line-height: 5px;
-    padding-top: 40px;
+#titulo{
     padding-left: 30px;
-    font-size: 40px;
+    padding-top: 40px;
 }
 
 .menu{
@@ -57,12 +55,12 @@ main{
     flex-direction: row;
     padding: 15px;
     font-family: "Cocogoose";
+    align-items: center;
+    justify-content: center;
 }
 
 aside {
     max-width: 800px;
-    margin-top: 200px;
-    margin-left: 50px;
 }
 
 h2 {
@@ -124,6 +122,12 @@ span {
     border-radius: 50%;
     width: 80px;
     height: 80px;
+}
+
+.imagem-icone:hover {
+    transition: 0.3s;
+    width: 55px;
+    height: 55px;
 }
 
 .copyright {
