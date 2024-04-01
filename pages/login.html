@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
-    <link rel="stylesheet" href="../CSS/contas.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="shortcut icon" type="image" href="../Imgs/ícone.png">
     <title>O Básico Bem Feito</title>
 </head>
 <body>
@@ -20,22 +21,15 @@
     </header>
 
     <main>
-            <form action="" id="form">
-                <input id="peso" class="form-input" type="text" placeholder="Peso (KG)" required="true" /></input>
-                <label for="peso" class="form-label"></label>
-
-                <input id="idade" class="form-input" type="text" placeholder="Idade" required="true" /></input>
-                <label for="idade" class="form-label"></label>
-
-                <input id="altura" class="form-input" type="text" placeholder="Altura (M)" required="true" /></input>
-                <label for="altura" class="form-label"></label>
-
-                <input id="circu_quadril" class="form-input" type="text" placeholder="Circuferência Do Quadril (CM)" required="true"></input>
-                <label for="circu_quadril" class="form-label"></label>
-                
-                <button id="botao" type="submit">Calcular</button>
+        <div class='login' id="login">
+            <h1>Seja bem vindo!</h1>
+            <form id="form"> 
+                <span>Insira suas informações</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <button type="submit">Criar conta</button>
             </form>
-
+        </div>
     </main>
 
     <footer id="fixarfooter">

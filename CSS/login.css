@@ -51,41 +51,71 @@ header{
     text-decoration: none;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
-    padding: 15px;
-    font-family: "Cocogoose";
     align-items: center;
     justify-content: center;
+    padding-top: 200px;
 }
 
-aside {
-    max-width: 800px;
+.login {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: rgb(84,166,159);
+    background: linear-gradient(90deg, rgba(84,166,159,1) 16%, rgba(75,128,150,1) 100%);
+    border-radius: 30px;
+    height: 440px;
+    width: 500px;
+    color: black;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(54, 93, 50, 0.2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 125, 211, 0.3) 0 0 0 4px;
 }
 
-h2 {
-    font-size: 45px;
+.login a {
+    color: black;
+}
+
+.login form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     line-height: 50px;
+    color: black;
 }
 
-span {
-    color: rgb(14, 42, 201)
-}
-
-#descricao {
+.login input {
+    margin: 10px;
     line-height: 30px;
-    font-size: 20px;
-    margin-top: 30px;
+    padding: 5px 15px;
+    background-color: #eee;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
 }
 
-#foto {
-    margin-left: 200px;
-    margin-top: 0px;
-    width: 750px;
+.login button {
+    background: rgb(64,125,120);
+    background: linear-gradient(90deg, rgba(64,125,120,1) 16%, rgba(55,95,112,1) 100%);
+    color: black;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 10px;
+    margin-top: 15px;
+    width: 50%;
+    cursor: pointer;
 }
 
-#fixarfooter {
+footer{
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 30px;
     bottom: 0;
@@ -95,7 +125,8 @@ span {
 
 #lista-footer {
     text-align: center;
-    background-color: rgb(48, 71, 199);
+    background: rgb(48,79,199);
+    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
 }
 
 .item {
@@ -110,7 +141,8 @@ span {
     text-align: center;
     padding-bottom: auto;
     padding-top: auto;
-    background-color: rgb(48, 71, 199);
+    background: rgb(48,79,199);
+    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
     font-size: 50px;
 }
 
@@ -133,7 +165,8 @@ span {
 
 .copyright {
     text-align: center;
-    background-color: rgb(48, 71, 199);
+    background: rgb(48,79,199);
+    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
     padding-top: 15px;
     padding-bottom: 15px;
 }

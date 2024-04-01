@@ -22,7 +22,8 @@ a:hover{
 }
 
 body{
-    background-color: rgb(23, 86, 122, 0.705);
+    background: rgb(52,166,189);
+    background: linear-gradient(90deg, rgba(52,166,189,1) 0%, rgba(29,48,57,1) 100%);
     color: white;
     font-family: "Cocogoose";
     margin: 0;
@@ -122,7 +123,8 @@ main{
 
 #lista-footer {
     text-align: center;
-    background-color: rgb(48, 71, 199);
+    background: rgb(48,79,199);
+    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
 }
 
 .item {
@@ -137,7 +139,8 @@ main{
     text-align: center;
     padding-bottom: auto;
     padding-top: auto;
-    background-color: rgb(48, 71, 199);
+    background: rgb(48,79,199);
+    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
     font-size: 50px;
 }
 
@@ -160,7 +163,8 @@ main{
 
 .copyright {
     text-align: center;
-    background-color: rgb(48, 71, 199);
+    background: rgb(48,79,199);
+    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
     padding-top: 15px;
     padding-bottom: 15px;
 }
