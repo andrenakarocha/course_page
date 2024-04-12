@@ -8,19 +8,6 @@
     src: url(../Fonts/Cocogoose.ttf);
 }
 
-a {
-    color: white;
-    list-style: none;
-    user-select: none;
-    text-decoration: none;
-}
-
-
-a:hover{
-    color: rgba(39, 166, 240, 0.705);
-    transition: 0.4s;
-}
-
 body{
     background: rgb(52,166,189);
     background: linear-gradient(90deg, rgba(52,166,189,1) 0%, rgba(29,48,57,1) 100%);
@@ -31,6 +18,18 @@ body{
     max-height: auto;
 }
 
+a {
+    color: white;
+    list-style: none;
+    user-select: none;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(39, 166, 240, 0.705);
+    transition: 0.4s;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -38,12 +37,12 @@ header{
     align-items: center;
 }
 
-#titulo{
+header #titulo{
     padding-left: 30px;
     padding-top: 40px;
 }
 
-.menu{
+header .menu{
     display: inline-flex;
     margin: 10px;
     font-size: 20px;
@@ -60,7 +59,7 @@ main{
     font-family: "Cocogoose";
 }
 
-#form {
+main #form {
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -71,7 +70,7 @@ main{
     border-radius: 20px;
 }
 
-.form-input {
+main .form-input {
     width: clamp(120px, 50vw, 420px);
     height: 2.5rem;
     padding: 0 1.25rem;
@@ -81,7 +80,7 @@ main{
     transition: all 250ms;
 }
 
-.form-label {
+main .form-label {
     font-size: 1rem;
     color: grey;
     display: block;
@@ -94,7 +93,7 @@ main{
     pointer-events: none; 
 }
 
-#botao {
+main #botao {
     margin-top: 20px;
     margin-left: 19%;
     background-color: #405cf5;
@@ -109,11 +108,11 @@ main{
     width: 300px;
 }
 
-#botao:focus {
+main #botao:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
-#fixarfooter {
+footer {
     width: 100%;
     height: 30px;
     bottom: 0;
@@ -121,13 +120,22 @@ main{
     position: absolute;
 }
 
-#lista-footer {
+footer #social {
     text-align: center;
-    background: rgb(48,79,199);
-    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
+    padding-bottom: auto;
+    padding-top: auto;
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
+    font-size: 50px;
 }
 
-.item {
+footer #lista-footer {
+    text-align: center;
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
+}
+
+footer .item {
     padding: 15px;
     display: inline-flex;
     flex-direction: row;
@@ -135,16 +143,7 @@ main{
     text-decoration: none;
 }
 
-#social {
-    text-align: center;
-    padding-bottom: auto;
-    padding-top: auto;
-    background: rgb(48,79,199);
-    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
-    font-size: 50px;
-}
-
-.icone {
+footer .icone {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -155,16 +154,16 @@ main{
     height: 80px;
 }
 
-.imagem-icone:hover {
-    transition: 0.3s;
-    width: 55px;
-    height: 55px;
+footer .icone:hover {
+    transition: 0.5s;
+    width: 85px;
+    height: 85px;
 }
 
-.copyright {
+footer #copyright {
     text-align: center;
-    background: rgb(48,79,199);
-    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
     padding-top: 15px;
     padding-bottom: 15px;
 }

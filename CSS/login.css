@@ -8,6 +8,16 @@
     src: url(../Fonts/Cocogoose.ttf);
 }
 
+body{
+    background: rgb(52,166,189);
+    background: linear-gradient(90deg, rgba(52,166,189,1) 0%, rgba(29,48,57,1) 100%);
+    color: white;
+    font-family: "Cocogoose";
+    margin: 0;
+    max-width: auto;
+    max-height: auto;
+}
+
 a {
     color: white;
     list-style: none;
@@ -20,16 +30,6 @@ a:hover{
     transition: 0.4s;
 }
 
-body{
-    background: rgb(52,166,189);
-    background: linear-gradient(90deg, rgba(52,166,189,1) 0%, rgba(29,48,57,1) 100%);
-    color: white;
-    font-family: "Cocogoose";
-    margin: 0;
-    max-width: auto;
-    max-height: auto;
-}
-
 header{
     display: flex;
     flex-direction: row;
@@ -37,12 +37,12 @@ header{
     align-items: center;
 }
 
-#titulo{
+header #titulo{
     padding-left: 30px;
     padding-top: 40px;
 }
 
-.menu{
+header .menu{
     display: inline-flex;
     margin: 10px;
     font-size: 20px;
@@ -56,37 +56,32 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
-.login {
+main .login {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background: rgb(84,166,159);
-    background: linear-gradient(90deg, rgba(84,166,159,1) 16%, rgba(75,128,150,1) 100%);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     height: 440px;
     width: 500px;
-    color: black;
+    color: #ccc;
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(54, 93, 50, 0.2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 125, 211, 0.3) 0 0 0 4px;
 }
 
-.login a {
-    color: black;
-}
-
-.login form {
+main .login form {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     line-height: 50px;
-    color: black;
+    color: #ccc;
 }
 
-.login input {
+main .login input {
     margin: 10px;
     line-height: 30px;
     padding: 5px 15px;
@@ -97,7 +92,7 @@ main {
     outline: none;
 }
 
-.login button {
+main .login button {
     background: rgb(64,125,120);
     background: linear-gradient(90deg, rgba(64,125,120,1) 16%, rgba(55,95,112,1) 100%);
     color: black;
@@ -113,7 +108,7 @@ main {
     cursor: pointer;
 }
 
-footer{
+footer {
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -123,13 +118,30 @@ footer{
     position: absolute;
 }
 
-#lista-footer {
-    text-align: center;
-    background: rgb(48,79,199);
-    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
+footer {
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
 }
 
-.item {
+footer #social {
+    text-align: center;
+    padding-bottom: auto;
+    padding-top: auto;
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
+    font-size: 50px;
+}
+
+footer #lista-footer {
+    text-align: center;
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
+}
+
+footer .item {
     padding: 15px;
     display: inline-flex;
     flex-direction: row;
@@ -137,16 +149,7 @@ footer{
     text-decoration: none;
 }
 
-#social {
-    text-align: center;
-    padding-bottom: auto;
-    padding-top: auto;
-    background: rgb(48,79,199);
-    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
-    font-size: 50px;
-}
-
-.icone {
+footer .icone {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -157,16 +160,16 @@ footer{
     height: 80px;
 }
 
-.imagem-icone:hover {
-    transition: 0.3s;
-    width: 55px;
-    height: 55px;
+footer .icone:hover {
+    transition: 0.5s;
+    width: 85px;
+    height: 85px;
 }
 
-.copyright {
+footer #copyright {
     text-align: center;
-    background: rgb(48,79,199);
-    background: linear-gradient(90deg, rgba(48,79,199,1) 0%, rgba(24,27,73,1) 100%);
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
     padding-top: 15px;
     padding-bottom: 15px;
 }

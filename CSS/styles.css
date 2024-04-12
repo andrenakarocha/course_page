@@ -8,6 +8,16 @@
     src: url(../Fonts/Cocogoose.ttf);
 }
 
+body{
+    background: rgb(52,166,189);
+    background: linear-gradient(90deg, rgba(52,166,189,1) 0%, rgba(29,48,57,1) 100%);
+    color: white;
+    font-family: "Cocogoose";
+    margin: 0;
+    max-width: auto;
+    max-height: auto;
+}
+
 a {
     color: white;
     list-style: none;
@@ -20,16 +30,6 @@ a:hover{
     transition: 0.4s;
 }
 
-body{
-    background: rgb(52,166,189);
-    background: linear-gradient(90deg, rgba(52,166,189,1) 0%, rgba(29,48,57,1) 100%);
-    color: white;
-    font-family: "Cocogoose";
-    margin: 0;
-    max-width: auto;
-    max-height: auto;
-}
-
 header{
     display: flex;
     flex-direction: row;
@@ -37,12 +37,12 @@ header{
     align-items: center;
 }
 
-#titulo{
+header #titulo{
     padding-left: 30px;
     padding-top: 40px;
 }
 
-.menu{
+header .menu{
     display: inline-flex;
     margin: 10px;
     font-size: 20px;
@@ -60,32 +60,32 @@ main{
     justify-content: center;
 }
 
-aside {
+main #text {
     max-width: 800px;
 }
 
-h2 {
+main h2 {
     font-size: 45px;
     line-height: 50px;
 }
 
-span {
+main span {
     color: rgb(14, 42, 201)
 }
 
-#descricao {
+main #descricao {
     line-height: 30px;
     font-size: 20px;
     margin-top: 30px;
 }
 
-#foto {
+main #photo {
     margin-left: 200px;
     margin-top: 0px;
     width: 750px;
 }
 
-#fixarfooter {
+footer {
     width: 100%;
     height: 30px;
     bottom: 0;
@@ -93,12 +93,22 @@ span {
     position: absolute;
 }
 
-#lista-footer {
+footer #social {
     text-align: center;
-    background-color: rgb(48, 71, 199);
+    padding-bottom: auto;
+    padding-top: auto;
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
+    font-size: 50px;
 }
 
-.item {
+footer #lista-footer {
+    text-align: center;
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
+}
+
+footer .item {
     padding: 15px;
     display: inline-flex;
     flex-direction: row;
@@ -106,15 +116,7 @@ span {
     text-decoration: none;
 }
 
-#social {
-    text-align: center;
-    padding-bottom: auto;
-    padding-top: auto;
-    background-color: rgb(48, 71, 199);
-    font-size: 50px;
-}
-
-.icone {
+footer .icone {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -125,15 +127,16 @@ span {
     height: 80px;
 }
 
-.imagem-icone:hover {
-    transition: 0.3s;
-    width: 55px;
-    height: 55px;
+footer .icone:hover {
+    transition: 0.5s;
+    width: 85px;
+    height: 85px;
 }
 
-.copyright {
+footer #copyright {
     text-align: center;
-    background-color: rgb(48, 71, 199);
+    background: rgb(49,115,204);
+    background: linear-gradient(90deg, rgba(49,115,204,1) 25%, rgba(29,46,190,1) 100%);
     padding-top: 15px;
     padding-bottom: 15px;
 }
